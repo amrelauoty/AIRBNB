@@ -1,0 +1,18 @@
+version: 2
+
+exposures:
+  - name: executive_dashboard
+    label: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://903acdfe.us2a.app.preset.io/superset/dashboard/8/?edit=true&native_filters_key=LzDsy5RZxES3qncz9muCRvNB6eirmqSEENxXKSSfwCpH2WL826TcqArNy0IbxHxA
+    description: Executive Dashboard about Airbnb listings and hosts
+      
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_full_moon_reviews')
+
+    owner:
+      name: Amr Elauoty
+      email: abadir@afreximbank.com
